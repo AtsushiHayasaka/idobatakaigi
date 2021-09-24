@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn({ setName }) {
+  
   const classes = useStyles();
 
   return (
@@ -63,7 +64,6 @@ export default function SignIn() {
             id="name"
             label="ニックネーム"
             name="name"
-
             autoFocus
           />
           
